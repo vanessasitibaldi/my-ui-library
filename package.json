@@ -1,5 +1,5 @@
 {
-  "name": "@vanessa.sitibaldi/my-ui-library",
+  "name": "@vanessa.sitibaldi/mylibraryteste",
   "version": "0.1.0",
   "description": "My new module",
   "main": "build/index.js",
@@ -15,7 +15,7 @@
   "keywords": [
     "react-native",
     "expo",
-    "my-ui-library",
+    "mylibraryteste",
     "MyUiLibrary"
   ],
   "repository": "https://github.com/vanessasitibaldi/my-ui-library.git",
@@ -26,6 +26,7 @@
   "license": "MIT",
   "homepage": "https://github.com/vanessasitibaldi/my-ui-library.git#readme",
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "@types/react": "~18.2.45",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.5",

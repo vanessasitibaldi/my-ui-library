@@ -1,0 +1,46 @@
+name: Release & Deploy Storybook
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: yarn install --frozen-lockfile
+
+      # ✅ Etapas de verificação
+      - run: yarn lint
+      - run: yarn check-types
+      - run: yarn test
+
+      # ✅ Build do módulo (expo-module build)
+      - run: yarn build
+
+      # ✅ Versionamento e publicação
+      - run: yarn changeset version
+      - run: yarn changeset publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # ✅ Storybook build e deploy
+      - run: yarn build-storybook
+      - run: yarn deploy-storybook
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      # ✅ Deploy Storybook to GitHub Pages
+      - name: Deploy Storybook to GitHub Pages
+        run: yarn deploy-storybook
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIT_ASKPASS: /bin/echo 
