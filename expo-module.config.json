@@ -1,9 +1,4 @@
 {
-  "platforms": ["apple", "android", "web"],
-  "apple": {
-    "modules": ["MyUiLibraryModule"]
-  },
-  "android": {
-    "modules": ["expo.modules.myuilibrary.MyUiLibraryModule"]
-  }
+  "name": "@vanessa.sitibaldi/mylibraryteste",
+  "type": "library"
 }
