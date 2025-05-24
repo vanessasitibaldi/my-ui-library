@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+
+# Build
+build/
+dist/
+.expo/
+web-build/
+
+# Configuração
+babel.config.js
+metro.config.js
+jest.config.js
+
+# Arquivos gerados
+coverage/ 

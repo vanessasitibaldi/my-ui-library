@@ -1,0 +1,23 @@
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+build/
+dist/
+.expo/
+web-build/
+
+# Artefatos de IDE
+.idea/
+.vscode/
+
+# Cache
+.eslintcache
+.cache/
+
+# Arquivos gerados
+*.log
+logs/
+coverage/ 
