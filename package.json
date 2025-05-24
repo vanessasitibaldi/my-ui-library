@@ -1,6 +1,6 @@
 {
   "name": "@vanessa.sitibaldi/mylibraryteste",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -57,5 +57,9 @@
   "dependencies": {
     "styled-components": "^6.1.18",
     "typescript": "^5.8.3"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
   }
 }
