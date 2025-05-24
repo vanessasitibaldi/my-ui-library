@@ -5,13 +5,13 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-  "build": "expo-module build",
-  "prepare": "expo-module prepare",
-  "test": "jest",
-  "lint": "eslint . --ext .ts,.tsx",
-  "format": "prettier --write .",
-  "prepublishOnly": "expo-module prepublishOnly"
-},
+    "build": "expo-module build",
+    "prepare": "expo-module prepare",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "prepublishOnly": "expo-module prepublishOnly"
+  },
   "keywords": [
     "react-native",
     "expo",
@@ -25,11 +25,15 @@
   "author": "vanessasitibaldi <vanessasitibaldi> ()",
   "license": "MIT",
   "homepage": "https://github.com/vanessasitibaldi/my-ui-library.git#readme",
-  "dependencies": {},
   "devDependencies": {
     "@types/react": "~18.2.45",
-    "expo-module-scripts": "~3.0.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "expo": "~52.0.46",
+    "expo-module-scripts": "~3.0.0",
+    "prettier": "^3.5.3",
     "react-native": "0.76.9"
   },
   "peerDependencies": {
