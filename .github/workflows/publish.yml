@@ -33,14 +33,14 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # ✅ Storybook build e deploy
-      - run: yarn build-storybook
-      - run: yarn deploy-storybook
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      # - run: yarn build-storybook
+      # - run: yarn deploy-storybook
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      # ✅ Deploy Storybook to GitHub Pages
-      - name: Deploy Storybook to GitHub Pages
-        run: yarn deploy-storybook
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIT_ASKPASS: /bin/echo 
+      # # ✅ Deploy Storybook to GitHub Pages
+      # - name: Deploy Storybook to GitHub Pages
+      #   run: yarn deploy-storybook
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      #     GIT_ASKPASS: /bin/echo 

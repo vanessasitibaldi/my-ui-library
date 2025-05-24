@@ -8,7 +8,7 @@
     "build": "expo-module build",
     "prepare": "expo-module prepare",
     "test": "jest",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint .",
     "format": "prettier --write .",
     "prepublishOnly": "expo-module prepublishOnly"
   },
@@ -28,6 +28,8 @@
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
     "@types/react": "~18.2.45",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-react": "^7.37.5",
@@ -35,7 +37,8 @@
     "expo": "~52.0.46",
     "expo-module-scripts": "~3.0.0",
     "prettier": "^3.5.3",
-    "react-native": "0.76.9"
+    "react-native": "0.76.9",
+    "typescript-eslint": "^8.32.1"
   },
   "peerDependencies": {
     "expo": "*",
