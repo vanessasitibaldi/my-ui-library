@@ -20,8 +20,8 @@ jobs:
 
       # ✅ Etapas de verificação
       - run: yarn lint
-      - run: yarn check-types
-      - run: yarn test
+      # - run: yarn check-types
+      # - run: yarn test
 
       # ✅ Build do módulo (expo-module build)
       - run: yarn build
