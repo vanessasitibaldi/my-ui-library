@@ -1,20 +1,17 @@
 {
-  "name": "my-ui-library",
+  "name": "@vanessa.sitibaldi/my-ui-library",
   "version": "0.1.0",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "expo-module build",
-    "clean": "expo-module clean",
-    "lint": "expo-module lint",
-    "test": "expo-module test",
-    "prepare": "expo-module prepare",
-    "prepublishOnly": "expo-module prepublishOnly",
-    "expo-module": "expo-module",
-    "open:ios": "xed example/ios",
-    "open:android": "open -a \"Android Studio\" example/android"
-  },
+  "build": "expo-module build",
+  "prepare": "expo-module prepare",
+  "test": "jest",
+  "lint": "eslint . --ext .ts,.tsx",
+  "format": "prettier --write .",
+  "prepublishOnly": "expo-module prepublishOnly"
+},
   "keywords": [
     "react-native",
     "expo",
@@ -30,10 +27,10 @@
   "homepage": "https://github.com/vanessasitibaldi/my-ui-library.git#readme",
   "dependencies": {},
   "devDependencies": {
-    "@types/react": "~19.0.0",
-    "expo-module-scripts": "^4.1.6",
-    "expo": "~53.0.0",
-    "react-native": "0.79.1"
+    "@types/react": "~18.2.45",
+    "expo-module-scripts": "~3.0.0",
+    "expo": "~52.0.46",
+    "react-native": "0.76.9"
   },
   "peerDependencies": {
     "expo": "*",
