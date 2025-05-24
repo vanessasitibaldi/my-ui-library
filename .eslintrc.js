@@ -2,50 +2,43 @@ module.exports = {
   root: true,
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-native/all',
-    'prettier',
+    'prettier'
   ],
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
-  plugins: ['react', 'react-native', '@typescript-eslint', 'prettier'],
-  rules: {
-    'prettier/prettier': 'error',
-    'react/prop-types': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'react-native/no-inline-styles': 'off',
-    'react-native/no-raw-text': 'off',
-    'no-undef': 'off',
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['warn'],
-    '@typescript-eslint/no-explicit-any': 'warn',
-  },
+  plugins: ['@typescript-eslint', 'react', 'react-hooks'],
   settings: {
     react: {
-      version: 'detect',
+      version: 'detect'
+    }
+  },
+  rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    '@typescript-eslint/no-unused-vars': ['warn', { 'argsIgnorePattern': '^_' }],
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'warn'
+  },
+  overrides: [
+    {
+      files: ['**/babel.config.js', '**/metro.config.js', '**/webpack.config.js'],
+      env: {
+        node: true
+      },
+      rules: {
+        '@typescript-eslint/no-require-imports': 'off',
+        'no-undef': 'off'
+      }
     },
-  },
-  env: {
-    'react-native/react-native': true,
-    jest: true,
-  },
-  globals: {
-    jest: true,
-    expect: true,
-    describe: true,
-    it: true,
-    test: true,
-    beforeEach: true,
-    afterEach: true,
-    beforeAll: true,
-    afterAll: true,
-  },
+    {
+      files: ['.eslintrc.js'],
+      env: { node: true },
+      rules: { 'no-undef': 'off' }
+    }
+  ]
 };
