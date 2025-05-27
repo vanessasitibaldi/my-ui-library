@@ -4,12 +4,15 @@ import { Theme, ThemeName, themes, defaultTheme } from '../tokens/theme';
 interface ThemeContextType {
   theme: Theme;
   themeName: ThemeName;
+  brand: string;
   setTheme: (themeName: ThemeName) => void;
+  setBrand: (brand: string) => void;
 }
 
 interface ThemeProviderProps {
   children: ReactNode;
   initialTheme?: ThemeName;
+  initialBrand?: string;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -17,8 +20,10 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   children,
   initialTheme = defaultTheme,
+  initialBrand = 'brand-a',
 }) => {
   const [themeName, setThemeName] = useState<ThemeName>(initialTheme as ThemeName);
+  const [brand, setBrand] = useState<string>(initialBrand);
   const theme = themes[themeName];
 
   const setTheme = (newThemeName: ThemeName) => {
@@ -26,7 +31,9 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, themeName, setTheme }}>{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={{ theme, themeName, brand, setTheme, setBrand }}>
+      {children}
+    </ThemeContext.Provider>
   );
 };
 
