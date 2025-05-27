@@ -1,18 +1,13 @@
+import { ThemeProvider } from '@vanessa.sitibaldi/mylibraryteste';
 import { SafeAreaView, ScrollView, Text } from 'react-native';
-import { Button, ThemeProvider, BrandAProvider, useTheme } from '@vanessa.sitibaldi/mylibraryteste';
+import Home from './src/screens/Home';
 
 export default function App() {
-  const { theme, brand, setBrand } = useTheme();
-
-  const handleBrandChange = () => {
-    setBrand(brand === 'brand-a' ? 'brand-b' : 'brand-a');
-  };
   return (
-    <ThemeProvider initialTheme="brand-b">
+    <ThemeProvider initialTheme="brand-a">
       <SafeAreaView style={styles.container}>
         <ScrollView style={styles.container}>
-          <Text style={styles.header}>Vanessa</Text>
-          <Button title="Click me" variant="primary" onPress={handleBrandChange} />
+          <Home />
         </ScrollView>
       </SafeAreaView>
     </ThemeProvider>

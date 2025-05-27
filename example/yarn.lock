@@ -1558,9 +1558,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "22.15.22"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.22.tgz#a138bd3dcc8b5d30ad2fda6354137581c2f05ee3"
-  integrity sha512-IZ8lyY8xikZwGTJ9tsmbE68+mZbx2tsR+WnN1ZJU/h5flim8xBxEbpDrouMQNkMeT4pYxyJOTkf7YyDcQaUvQw==
+  version "22.15.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.15.23.tgz#a0b7c03f951f1ffe381a6a345c68d80e48043dd0"
+  integrity sha512-7Ec1zaFPF4RJ0eXu1YT/xgiebqwqoJz8rYPDi/O2BcZ++Wpt0Kq9cl0eg6NN6bYbPnR67ZLo7St5Q3UK0SnARw==
   dependencies:
     undici-types "~6.21.0"
 
@@ -1615,10 +1615,10 @@
     "@urql/core" "^5.1.1"
     wonka "^6.3.2"
 
-"@vanessa.sitibaldi/mylibraryteste@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@vanessa.sitibaldi/mylibraryteste/-/mylibraryteste-0.3.2.tgz#dd136e68d2913c2de445955102ff473e1957d023"
-  integrity sha512-vQ46fECaDzcIZeKqDraTgepW6J2r8ZKz+rlsCXaw44jUN2sqdpyPjI8NVPGd6dHvUJ4uSDCof9MpE80bhQg2Ww==
+"@vanessa.sitibaldi/mylibraryteste@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@vanessa.sitibaldi/mylibraryteste/-/mylibraryteste-0.3.3.tgz#6af12b1b1edd60e81a4ea395df74bc2b4dee20f6"
+  integrity sha512-XUjxBi04ZIL6gCZH1iEim3nO2atshxejP/W8BXOHuueiEqXl1N+jFNHMGQMCjpn/y5ahPhut6qrRNiZLfMAkbg==
   dependencies:
     styled-components "^6.1.18"
     typescript "^5.8.3"
