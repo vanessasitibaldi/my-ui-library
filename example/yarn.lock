@@ -1471,10 +1471,10 @@
     "@urql/core" "^5.1.1"
     wonka "^6.3.2"
 
-"@vanessa.sitibaldi/mylibraryteste@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@vanessa.sitibaldi/mylibraryteste/-/mylibraryteste-1.0.2.tgz#4a090e9f979bebb48581d5fc6ec04c4c21f2cd02"
-  integrity sha512-i4IVRsOLrhMgDQ6/eKpKSo2XELx2FPCwoaf9DnduuvpVjGjHK4HoCA8fzVrKf9xCvSMOJX/wEsMZsCt+3u2kkA==
+"@vanessa.sitibaldi/mylibraryteste@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@vanessa.sitibaldi/mylibraryteste/-/mylibraryteste-2.0.0.tgz#db55751f0f551a28803adaac09034ee8e2a94b9f"
+  integrity sha512-IKxFCY6ODhTaMOwgm97u1L/WDBu5MWXN51/vDhIHD1TteMwKtPzbxlgwlBuV6N2ExClzDp5Ao7ECdg5fl8OOuA==
   dependencies:
     styled-components "^6.1.18"
 
