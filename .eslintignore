@@ -10,7 +10,7 @@ web-build/
 # Configuração
 babel.config.js
 metro.config.js
-jest.config.js
+
 
 # Arquivos gerados
 coverage/ 

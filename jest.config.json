@@ -1,7 +1,0 @@
-{
-  "preset": "react-native",
-  "transform": {
-    "^.+\\.(js|ts|tsx)$": "ts-jest"
-  },
-  "testMatch": ["**/__tests__/**/*.test.ts?(x)"]
-}

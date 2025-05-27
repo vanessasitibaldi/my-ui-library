@@ -7,7 +7,6 @@
   "scripts": {
     "build": "expo-module build",
     "prepare": "expo-module prepare",
-    "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
