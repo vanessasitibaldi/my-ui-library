@@ -3,14 +3,21 @@ import { View, Text } from 'react-native';
 import type { ThemeName } from '@vanessa.sitibaldi/mylibraryteste';
 
 export default function Home() {
-  const { setTheme, themeName } = useTheme();
+  const { setTheme, themeName, theme } = useTheme();
 
   const handleThemeChange = (theme: ThemeName) => {
     setTheme(theme);
   };
 
   return (
-    <View style={{ padding: 20 }}>
+    <View
+      style={{
+        padding: 20,
+        backgroundColor: theme.colors.brand.main,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <Text style={{ fontSize: 24, marginBottom: 20 }}>Marca Atual: {themeName}</Text>
 
       <View style={{ gap: 10 }}>

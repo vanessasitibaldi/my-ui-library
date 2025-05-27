@@ -8,6 +8,5 @@ export * from './tokens';
 export { ThemeProvider, useTheme } from './contexts/ThemeContext';
 
 // Exportando providers específicos
-export { BrandAProvider } from './providers/BrandAProvider';
 export { dimension, fontInPixelToDP } from './utils/dimensions.utils';
 

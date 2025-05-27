@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 1.0.1
+
+### Patch Changes
+
+- usa dimentions
+
 ## 1.0.0
 
 ### Major Changes

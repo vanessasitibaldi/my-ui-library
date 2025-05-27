@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { dimension } from '../../utils/dimensions.utils';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline';
 
@@ -11,8 +12,8 @@ interface ButtonTextProps {
 }
 
 export const ButtonContainer = styled.TouchableOpacity<ButtonContainerProps>`
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: ${dimension(12)}px ${dimension(24)}px;
+  border-radius: ${dimension(8)}px;
   align-items: center;
   justify-content: center;
   background-color: ${({ variant, theme }) => 
@@ -24,7 +25,7 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonContainerProps>`
 `;
 
 export const ButtonText = styled.Text<ButtonTextProps>`
-  font-size: 16px;
+  font-size: ${dimension(16)}px;
   font-weight: 600;
   color: ${({ variant, theme }) => 
     variant === 'outline' ? theme.colors.brand.main : theme.colors.base.LT};

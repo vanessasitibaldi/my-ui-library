@@ -17,7 +17,5 @@ export default function App() {
 const styles = {
   container: {
     flex: 1,
-    backgroundColor: '#eee',
-    padding: 20,
   },
 };
