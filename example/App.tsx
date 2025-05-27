@@ -1,17 +1,20 @@
 import { SafeAreaView, ScrollView, Text } from 'react-native';
-import { Button, ThemeProvider, BrandAProvider } from '@vanessa.sitibaldi/mylibraryteste';
+import { Button, ThemeProvider, BrandAProvider, useTheme } from '@vanessa.sitibaldi/mylibraryteste';
 
 export default function App() {
+  const { theme, brand, setBrand } = useTheme();
+
+  const handleBrandChange = () => {
+    setBrand(brand === 'brand-a' ? 'brand-b' : 'brand-a');
+  };
   return (
     <ThemeProvider initialTheme="brand-b">
-      <BrandAProvider>
-        <SafeAreaView style={styles.container}>
-          <ScrollView style={styles.container}>
-            <Text style={styles.header}>Vanessa</Text>
-            <Button title="Click me" variant="primary" />
-          </ScrollView>
-        </SafeAreaView>
-      </BrandAProvider>
+      <SafeAreaView style={styles.container}>
+        <ScrollView style={styles.container}>
+          <Text style={styles.header}>Vanessa</Text>
+          <Button title="Click me" variant="primary" onPress={handleBrandChange} />
+        </ScrollView>
+      </SafeAreaView>
     </ThemeProvider>
   );
 }
