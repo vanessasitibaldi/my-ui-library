@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 1.0.0
+
+### Major Changes
+
+- sobe versao expo
+
 ## 0.1.2
 
 ### Patch Changes
