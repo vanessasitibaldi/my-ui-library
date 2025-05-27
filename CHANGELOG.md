@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 0.3.0
+
+### Minor Changes
+
+- marca b
+
 ## 0.2.1
 
 ### Patch Changes
