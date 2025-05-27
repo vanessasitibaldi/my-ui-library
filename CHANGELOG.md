@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 0.2.1
+
+### Patch Changes
+
+- cria marca b
+
 ## 0.2.0
 
 ### Minor Changes
