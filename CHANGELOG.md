@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 0.3.4
+
+### Patch Changes
+
+- lala1
+
 ## 0.3.3
 
 ### Patch Changes
