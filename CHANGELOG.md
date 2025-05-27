@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 2.0.0
+
+### Major Changes
+
+- lala
+
 ## 1.0.0
 
 ### Major Changes
