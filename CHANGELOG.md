@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 0.3.2
+
+### Patch Changes
+
+- cor baseado no thema
+
 ## 0.3.1
 
 ### Patch Changes

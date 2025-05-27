@@ -8,7 +8,7 @@ export default function App() {
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>
             <Text style={styles.header}>Vanessa</Text>
-            <Button title="Click me" variant="outline" />
+            <Button title="Click me" variant="primary" />
           </ScrollView>
         </SafeAreaView>
       </BrandAProvider>

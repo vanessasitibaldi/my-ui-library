@@ -11,7 +11,7 @@ export const colors = {
   brand: {
     LT2: '#FDE0E6',
     LT1: '#F68097',
-    main: '#ED0030',
+    main: '#0071E0',
     DK1: '#B20024',
     DK2: '#760018',
   },
@@ -43,7 +43,7 @@ export const colors = {
   specialC: {
     LT2: '#FDE0EB',
     LT1: '#FABFD5',
-    main: '#ED0059',
+    main: '#0071E0',
     DK1: '#76002C',
   },
   success: {
