@@ -1,6 +1,6 @@
 {
   "name": "@vanessa.sitibaldi/mylibraryteste",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -33,29 +33,29 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.4",
-    "@types/react": "~18.2.45",
-    "@typescript-eslint/eslint-plugin": "^8.32.1",
-    "@typescript-eslint/parser": "^8.32.1",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-native": "^5.0.0",
-    "expo": "~52.0.46",
-    "expo-module-scripts": "~3.0.0",
-    "prettier": "^3.5.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-native": "0.76.9"
+    "@types/react": "~18.2.50",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "expo": "~53.0.2",
+    "expo-module-scripts": "~3.1.0",
+    "prettier": "^3.2.5",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.73.8"
   },
   "peerDependencies": {
-    "expo": "*",
-    "react": "18.2.0",
-    "react-native": "0.76.9"
+    "expo": ">=53.0.0",
+    "react": ">=19.0.0",
+    "react-native": ">=0.73.8"
   },
   "dependencies": {
     "styled-components": "^6.1.18",
-    "typescript": "^5.8.3"
+    "typescript": "^5.3.3"
   },
   "private": false,
   "publishConfig": {
