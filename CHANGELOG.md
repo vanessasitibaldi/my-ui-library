@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 1.1.0
+
+### Minor Changes
+
+- #######
+
 ## 1.0.1
 
 ### Patch Changes
