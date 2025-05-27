@@ -3,7 +3,7 @@ import { Button, ThemeProvider, BrandAProvider } from '@vanessa.sitibaldi/mylibr
 
 export default function App() {
   return (
-    <ThemeProvider initialTheme="brand-a">
+    <ThemeProvider initialTheme="brand-b">
       <BrandAProvider>
         <SafeAreaView style={styles.container}>
           <ScrollView style={styles.container}>

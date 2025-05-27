@@ -1,4 +1,6 @@
-export const colors = {
+import { BaseColors } from '../../types';
+
+export const colors: BaseColors = {
   base: {
     LT: '#FFFFFF',
     DK: '#121212',

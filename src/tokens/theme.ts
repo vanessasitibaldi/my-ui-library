@@ -1,8 +1,9 @@
+import { BaseColors } from '../types';
 import { brandA } from './brand-a';
-import { Colors } from './brand-a/colors';
+import { brandB } from './brand-b';
 
 export type Theme = {
-  colors: Colors;
+  colors: BaseColors;
   typography: {
     fontFamily: string;
     fontSize: {
@@ -20,6 +21,7 @@ export type Theme = {
 
 export const themes = {
   'brand-a': brandA,
+  'brand-b': brandB,
 } as const;
 
 export type ThemeName = keyof typeof themes;
