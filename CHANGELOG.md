@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 0.3.1
+
+### Patch Changes
+
+- resolve tipagem
+
 ## 0.3.0
 
 ### Minor Changes

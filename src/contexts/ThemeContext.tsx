@@ -18,7 +18,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   children,
   initialTheme = defaultTheme,
 }) => {
-  const [themeName, setThemeName] = useState<ThemeName>(initialTheme);
+  const [themeName, setThemeName] = useState<ThemeName>(initialTheme as ThemeName);
   const theme = themes[themeName];
 
   const setTheme = (newThemeName: ThemeName) => {
