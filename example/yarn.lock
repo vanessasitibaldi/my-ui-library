@@ -1471,13 +1471,12 @@
     "@urql/core" "^5.1.1"
     wonka "^6.3.2"
 
-"@vanessa.sitibaldi/mylibraryteste@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@vanessa.sitibaldi/mylibraryteste/-/mylibraryteste-1.0.1.tgz#49e43bb8b7992c60ad8a01b79910442fdbe56d7f"
-  integrity sha512-BF4USCVz9jjUUJgF6YZVL8gH65x+UZ6c17Ly5V5+aG7HXrCFh0e/AvdOkn39ba1Z4xSaVPboOtesn0XoxKk/lA==
+"@vanessa.sitibaldi/mylibraryteste@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@vanessa.sitibaldi/mylibraryteste/-/mylibraryteste-1.0.2.tgz#4a090e9f979bebb48581d5fc6ec04c4c21f2cd02"
+  integrity sha512-i4IVRsOLrhMgDQ6/eKpKSo2XELx2FPCwoaf9DnduuvpVjGjHK4HoCA8fzVrKf9xCvSMOJX/wEsMZsCt+3u2kkA==
   dependencies:
     styled-components "^6.1.18"
-    typescript "^5.8.3"
 
 "@xmldom/xmldom@^0.8.8":
   version "0.8.10"
@@ -4214,7 +4213,7 @@ type-fest@^0.7.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.7.1.tgz#8dda65feaf03ed78f0a3f9678f1869147f7c5c48"
   integrity sha512-Ne2YiiGN8bmrmJJEuTWTLJR32nh/JdL1+PSicowtNb0WFpn59GK8/lfD61bVtzguz7b3PBt74nxpv/Pw5po5Rg==
 
-typescript@^5.8.3, typescript@~5.8.3:
+typescript@~5.8.3:
   version "5.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.3.tgz#92f8a3e5e3cf497356f4178c34cd65a7f5e8440e"
   integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==

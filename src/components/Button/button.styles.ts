@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { dimension } from '../../utils/dimensions.utils';
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline';
 
@@ -11,21 +12,21 @@ interface ButtonTextProps {
 }
 
 export const ButtonContainer = styled.TouchableOpacity<ButtonContainerProps>`
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: ${dimension(12)}px ${dimension(24)}px;
+  border-radius: ${dimension(8)}px;
   align-items: center;
   justify-content: center;
-  background-color: ${({ variant }) => 
-    variant === 'primary' ? '#007AFF' : 
-    variant === 'secondary' ? '#5856D6' : 
-    variant === 'outline' ? 'transparent' : '#007AFF'};
-  border: ${({ variant }) => 
-    variant === 'outline' ? '1px solid #007AFF' : 'none'};
+  background-color: ${({ variant, theme }) => 
+    variant === 'primary' ? theme.colors.brand.main : 
+    variant === 'secondary' ? theme.colors.brand.main : 
+    variant === 'outline' ? 'transparent' : theme.colors.brand.main};
+  border: ${({ variant, theme }) => 
+    variant === 'outline' ? `1px solid ${theme.colors.brand.main}` : 'none'};
 `;
 
 export const ButtonText = styled.Text<ButtonTextProps>`
-  font-size: 16px;
+  font-size: ${dimension(16)}px;
   font-weight: 600;
-  color: ${({ variant }) => 
-    variant === 'outline' ? '#007AFF' : '#FFFFFF'};
+  color: ${({ variant, theme }) => 
+    variant === 'outline' ? theme.colors.brand.main : theme.colors.base.LT};
 `; 
