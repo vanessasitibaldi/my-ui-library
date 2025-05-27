@@ -1,6 +1,6 @@
 {
   "name": "@vanessa.sitibaldi/mylibraryteste",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -23,7 +23,10 @@
     "mylibraryteste",
     "MyUiLibrary"
   ],
-  "repository": "https://github.com/vanessasitibaldi/my-ui-library.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanessasitibaldi/my-ui-library.git"
+  },
   "bugs": {
     "url": "https://github.com/vanessasitibaldi/my-ui-library/issues"
   },
