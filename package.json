@@ -1,6 +1,6 @@
 {
   "name": "@vanessa.sitibaldi/mylibraryteste",
-  "version": "0.3.4",
+  "version": "1.0.0",
   "description": "My new module",
   "main": "build/index.js",
   "types": "build/index.d.ts",

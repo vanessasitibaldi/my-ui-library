@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { Theme, ThemeName, themes, defaultTheme } from '../tokens/theme';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components/native';
 
 interface ThemeContextType {
   theme: Theme;
@@ -32,7 +33,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
 
   return (
     <ThemeContext.Provider value={{ theme, themeName, brand, setTheme, setBrand }}>
-      {children}
+      <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>
     </ThemeContext.Provider>
   );
 };

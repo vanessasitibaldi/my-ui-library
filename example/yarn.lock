@@ -1615,10 +1615,10 @@
     "@urql/core" "^5.1.1"
     wonka "^6.3.2"
 
-"@vanessa.sitibaldi/mylibraryteste@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@vanessa.sitibaldi/mylibraryteste/-/mylibraryteste-0.3.3.tgz#6af12b1b1edd60e81a4ea395df74bc2b4dee20f6"
-  integrity sha512-XUjxBi04ZIL6gCZH1iEim3nO2atshxejP/W8BXOHuueiEqXl1N+jFNHMGQMCjpn/y5ahPhut6qrRNiZLfMAkbg==
+"@vanessa.sitibaldi/mylibraryteste@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@vanessa.sitibaldi/mylibraryteste/-/mylibraryteste-0.3.4.tgz#86cc2ba52b4729ac948d327644df19ab97ec4ee0"
+  integrity sha512-scjBQIY4bZuvfv35vrVMsmmyl8SFgbhVHA0JxuvoaOuLZIlXIPIYxw+XheoT2qnYiYc7ypaT0RA8EJu67JJewg==
   dependencies:
     styled-components "^6.1.18"
     typescript "^5.8.3"

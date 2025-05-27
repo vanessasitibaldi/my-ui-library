@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 1.0.0
+
+### Major Changes
+
+- tema
+
 ## 0.3.4
 
 ### Patch Changes
