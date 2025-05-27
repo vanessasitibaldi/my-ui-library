@@ -1,5 +1,11 @@
 # @vanessa.sitibaldi/mylibraryteste
 
+## 0.2.0
+
+### Minor Changes
+
+- cria tokens e estrutura multi marcas
+
 ## 0.1.2
 
 ### Patch Changes
