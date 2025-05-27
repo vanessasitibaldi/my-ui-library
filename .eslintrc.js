@@ -26,12 +26,12 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/babel.config.js', '**/metro.config.js', '**/webpack.config.js'],
+      files: ['**/babel.config.js', '**/metro.config.js', '**/webpack.config.js', '**/eslint.config.js'],
       env: {
         node: true
       },
       rules: {
-        '@typescript-eslint/no-require-imports': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
         'no-undef': 'off'
       }
     },
