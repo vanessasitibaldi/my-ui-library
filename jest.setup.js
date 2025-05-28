@@ -1,10 +1,14 @@
+/* global Proxy */
 import '@jest/globals';
 import 'react-native-gesture-handler/jestSetup';
+import { jest } from '@jest/globals';
 
 jest.mock('react-native-reanimated', () => {
-  const Reanimated = require('react-native-reanimated/mock');
-  Reanimated.default.call = () => {};
-  return Reanimated;
+  return {
+    default: {
+      call: () => {},
+    },
+  };
 });
 
 try {
