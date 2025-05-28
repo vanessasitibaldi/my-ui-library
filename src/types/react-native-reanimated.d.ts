@@ -1,4 +1,12 @@
 declare module 'react-native-reanimated/mock' {
-  const mock: any;
+  interface MockReanimated {
+    default: {
+      call: () => void;
+      [key: string]: unknown;
+    };
+    [key: string]: unknown;
+  }
+  
+  const mock: MockReanimated;
   export default mock;
 } 
