@@ -10,7 +10,7 @@
     "prebuild": "expo prebuild"
   },
   "dependencies": {
-    "@vanessa.sitibaldi/mylibraryteste": "^1.0.2",
+    "@vanessa.sitibaldi/mylibraryteste": "^2.0.0",
     "expo": "~53.0.9",
     "react": "19.0.0",
     "react-native": "0.79.2"
