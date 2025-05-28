@@ -25,6 +25,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
+coverage/
 
 # Android/IJ
 #
@@ -45,6 +46,7 @@ example/ios/Pods
 
 # Ruby
 example/vendor/
+
 
 # node.js
 #
